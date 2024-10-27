@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+form {
+    background: rgb(131, 216, 228);
+    padding: 20px;
+    border-radius: 5px;
+    border: 6px solid blue;
+    box-shadow: 0 2px 10px blue;
+    margin-bottom: 20px;
+}
+input {
+    display: block;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    background: white;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: blue;
+    color: white;
+}
+#displayed-resume {
+    background: rgb(131, 216, 228);
+    padding: 20px;
+    border-radius: 5px;
+    border: 6px solid blue;
+    box-shadow: 0 2px 10px blue;
+}
+h2 {
+    font-size: 26px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+fieldset {
+    border: 2px solid blue;
+}
+legend h3 {
+    color: blue;
+    border-bottom: 2px solid blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 6px;
+}
+strong {
+    font-size: 22px;
+    padding: 16px;
+    text-decoration: underline;
+}
