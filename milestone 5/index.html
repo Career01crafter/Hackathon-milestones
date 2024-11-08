@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>SHAREABLE RESUME BUILDER</h1>
+    <form id="form">
+      <fieldset>
+
+        <legend>PERSONAL INFORMATION</legend>
+        <label for="username">UserName:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          required
+        />
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <br />
+        <label for="contact-no">Contact-no:</label>
+        <input
+          type="tel"
+          id="contact-no"
+          placeholder="Enter your phone number"
+          required
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your vaild email"
+          required
+        />
+        <br />
+        <label for="address">Address:</label>
+        <textarea
+          id="address"
+          name="address"
+          rows="4"
+          placeholder="Enter your address here"
+          required
+        ></textarea>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>EDUCATION</legend>
+        <label for="degree">Degree:</label>
+        <input
+          type="text"
+          id="degree"
+          name="degree"
+          placeholder="Enter your degree"
+          required
+        />
+
+        <label for="institution">Institution:</label>
+        <input
+          type="text"
+          id="institution"
+          name="institution"
+          placeholder="Enter institution name"
+          required
+        />
+
+        <label for="year">Graduation Year:</label>
+        <input
+          type="text"
+          id="year"
+          name="year"
+          placeholder="Enter graduation year"
+          required
+        />
+
+        <button type="button" onclick="addEducation()">Add Education</button>
+        
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>EXPERIENCE</legend>
+        <label for="job-title">Job Title:</label>
+        <input
+          type="text"
+          id="job-title"
+          name="job-title"
+          placeholder="Enter job title"
+          required
+        />
+
+        <label for="company">Company:</label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          placeholder="Enter company name"
+          required
+        />
+
+        <label for="duration">Duration:</label>
+        <input
+          type="text"
+          id="duration"
+          name="duration"
+          placeholder="Enter job duration (e.g., 2 years)"
+          required
+        />
+
+        <button type="button" onclick="addExperience()">Add Experience</button>
+        
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>SKILLS</legend>
+        <label for="skills">Skills:</label>
+        <input
+          type="text"
+          id="skills"
+          name="skills"
+          placeholder="Enter a skill"
+          required
+        />
+        <button type="button" onclick="addSkill()">Add Skill</button>
+      </fieldset>
+      <br />
+      <button type="submit"><b>Generate Resume</b></button>
+      
+    </form>
+    <br />
+    <!--Editable and Dynamic resume for display-->
+    <div id="displayed-resume" contenteditable="true"></div>
+
+    <br />
+
+    <!--section for the shareable link and downloading option-->
+    <div id="shareable-link-container" style="display: none">
+      <h2>SHAREABLE LINK</h2>
+      <p>View and edit your resume through this link!</p>
+      <a href="#" id="shareable-link" target="_blank"></a>
+      <br />
+      <button id="pdf-download"><b>Download as PDF</b></button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
